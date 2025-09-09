@@ -11,6 +11,10 @@ class MainWindow(QMainWindow):
 
         button = QPushButton("Click here")
         self.setCentralWidget(button)
+        button.clicked.connect(self.imprimir)
+
+    def imprimir(self):
+        print("button-test")
 
 main = MainWindow()
 main.show()
