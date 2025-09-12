@@ -1,11 +1,13 @@
-from PySide6.QtWidgets import QApplication, QMainWindow, QLineEdit, QFrame
+from PySide6.QtWidgets import QApplication, QMainWindow
+from PySide6.QtCore import QSize
 import sys
 
 class MainWindow(QMainWindow):
     def __init__(self):
         super().__init__()
 
-        self.setWindowTitle("QLineEdit & QLabel")
+        self.setWindowTitle("Project Model")
+        self.setFixedSize(QSize(600,400))
 
 app = QApplication(sys.argv)
 main = MainWindow()
