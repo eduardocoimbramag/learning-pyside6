@@ -6,7 +6,7 @@ class MainWindow(QMainWindow):
     def __init__(self):
         super().__init__()
 
-        self.setWindowTitle("Project Model")
+        self.setWindowTitle("Label")
         self.setFixedSize(QSize(600,400))
 
         self.input = QLineEdit()
