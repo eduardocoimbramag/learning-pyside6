@@ -8,10 +8,10 @@ class MainWindow(QMainWindow):
         super().__init__()
 
         self.setWindowTitle("PixMap")
-        self.setFixedSize(QSize(600,400))
 
         self.lbl = QLabel()
         self.lbl.setPixmap(QPixmap("mypresident.jpg")) #setando o label como imagem
+        self.lbl.setScaledContents(True) #acompanha a largura e altura da janela
 
         self.setCentralWidget(self.lbl)
 
