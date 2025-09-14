@@ -1,4 +1,4 @@
-from PySide6.QtWidgets import QApplication, QMainWindow, QComboBox
+from PySide6.QtWidgets import QApplication, QMainWindow, QListWidget
 from PySide6.QtCore import QSize
 import sys
 
@@ -7,12 +7,11 @@ class MainWindow(QMainWindow):
         super().__init__()
 
         self.setWindowTitle("Project Model")
-
-        self.cb = QComboBox()
-        self.cb.addItem("Item 1")
-        self.cb.addItem("Item 2")
         
-        self.setCentralWidget(self.cb)
+        self.lw = QListWidget()
+        self.lw.addItems(["ITEM 1", "ITEM 2", "ITEM 3"])
+                         
+        self.setCentralWidget(self.lw)
 
 app = QApplication(sys.argv)
 main = MainWindow()
